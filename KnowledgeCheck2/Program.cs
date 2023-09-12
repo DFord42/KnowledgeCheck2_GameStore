@@ -6,14 +6,12 @@ namespace GameStore
     {
         public static void Main(string[] args)
         {
-
             Console.WriteLine("How many records do you want to add? ");
             var numberOfRecords = int.Parse(Console.ReadLine());
 
             var HandHeldVideoGameConsoles = new List<HandheldVideoGameConsole>();
             for (int i = 0; i < numberOfRecords; i++)
             {
-                // In this loop, populate the object's properties using Console.ReadLine()
                 var handheldVideoGameConsole = new HandheldVideoGameConsole();
 
                 Console.WriteLine("What is the name of the video game console you are adding?");
@@ -45,6 +43,7 @@ namespace GameStore
 
 
                 HandHeldVideoGameConsoles.Add(handheldVideoGameConsole);
+                //Blank line added for console readability
                 Console.WriteLine("\n");
             }
 
@@ -55,7 +54,6 @@ namespace GameStore
             }
             Console.ReadKey();
         }
-
 
         private static bool ValidAnswerCheck(HandheldVideoGameConsole handheldVideoGameConsole)
         {
@@ -83,5 +81,4 @@ namespace GameStore
             return check;
         }
     }
-
 }

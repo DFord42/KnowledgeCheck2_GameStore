@@ -24,7 +24,5 @@ namespace GameStore
         public bool HasMultipleScreens { get; set; }
 
 	}
-
-
 }
 
